@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 import datetime
-import config
+import creds
 from urllib import parse, request
 import re
 
@@ -51,4 +51,4 @@ async def on_message(message):
         await message.channel.send('This is that you want http://youtube.com/fazttech')
         await bot.process_commands(message)
 
-bot.run(config.token)
+bot.run(creds.token)
